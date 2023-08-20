@@ -66,6 +66,7 @@ def qa_llm():
     embeddings = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
     db = Chroma(persist_directory="db", embedding_function = embeddings, client_settings=CHROMA_SETTINGS)
     retriever = db.as_retriever()
+
     qa = RetrievalQA.from_chain_type(
         llm = llm,
         chain_type = "stuff",
@@ -115,7 +116,7 @@ def main():
 
     #uploaded_file = st.file_uploader("", type=["pdf"])
     #print(uploaded_file)
-    uploaded_file="fastfacts-what-is-climate-change.pdf"
+    uploaded_file="ilovepdf_merged.pdf"
 
     if uploaded_file is not None:
         # file_details = {

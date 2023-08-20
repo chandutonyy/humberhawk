@@ -1,8 +1,10 @@
 streamlit
 transformers
 torch
-textwrap
-langchain
-pdfminer.six
-sentence-transformers
 Pillow
+pdfminer.six 
+sentence-transformers
+langchain
+chromadb
+streamlit_chat
+accelerate
