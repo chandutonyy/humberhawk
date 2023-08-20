@@ -1,0 +1,8 @@
+streamlit
+transformers
+torch
+textwrap
+langchain
+pdfminer.six
+sentence-transformers
+Pillow
